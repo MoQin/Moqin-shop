@@ -1,0 +1,13 @@
+/*public公共类*/
+.fl{float:left;}
+.fr{float:right;}
+.pa{position:absolute;}
+.pr{position:relative;}
+/*end  public公共类*/
+.contain{width:100%;max-width:640px;min-width:320px;margin:0 auto;/*padding:0 0.5rem;*/background: #ccc;height:3500px;}
+
+.top{max-width:640px;position: fixed;min-width:320px;width:100%;/*padding:0 2.5rem;*/}
+.top-search{width:100%;height:5rem;line-height: 5rem;/*padding:0 2.5rem;*/position: relative;top:0px;}
+.top-search span.glyphicon-list{background:#1CBB7F;font-size:25px;}
+.top-search span.glyphicon-search{font-size:25px;background:#1CBB7F;line-height:5rem;}
+.input-search{width:85%;position: absolute;	font-size:25px;height:100%;
