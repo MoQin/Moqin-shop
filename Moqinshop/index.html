@@ -5,17 +5,38 @@
 	<title>商场首页</title>
 	<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.css">
 	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/swiper.min.css">
 </head>
 <body>
 	<div class="contain">
 		
 
 		<div class="top">
-			<div class="top-search input-group">
-				<span class="glyphicon glyphicon-list input-group-addon"></span>
-				<input type="text" class="input-search" placeholder="商品搜索">
-				<span class="glyphicon glyphicon-search input-group-addon"></span>
+			<div class="top-search-panel">
+				<div class="top-search input-group">
+					<span class="glyphicon glyphicon-list input-group-addon"></span>
+					<input type="text" class="input-search" placeholder="商品搜索">
+					<span class="glyphicon glyphicon-search input-group-addon"></span>
+				</div>
 			</div>
+		</div>
+		<div class="center">
+			<div class="slide">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="./images/ectouch2_ad1.png" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="./images/ectouch2_ad2.png" alt="">	
+						</div>
+						<div class="swiper-slide">
+							<img src="./images/ectouch2_ad3.png" alt="">
+						</div>
+						
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>	
 		</div>
 		<div class="center"></div>
 		<div class="footer"></div>
@@ -25,3 +46,15 @@
 </html>
 <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.js"></script>
 <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="./js/swiper.jquery.min.js"></script>
+
+<script>
+	$(function(){
+		var mySwiper=new Swiper(".swiper-container",{
+			 speed: 400,
+			 loop:true,
+			 pagination:".swiper-pagination",
+			 autoplay:2000
+		})
+	})
+</script>
