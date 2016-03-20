@@ -1,8 +1,10 @@
 /*public公共类*/
+*{margin:0px;padding:0px;}
 .fl{float:left;}
 .fr{float:right;}
 .pa{position:absolute;}
 .pr{position:relative;}
+li{list-style:none;}
 /*end  public公共类*/
 .contain{width:100%;max-width:640px;min-width:320px;margin:0 auto;/*padding:0 0.5rem;*/background: #ccc;height:3500px;}
 
