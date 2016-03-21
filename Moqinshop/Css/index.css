@@ -37,4 +37,4 @@ html{font-size: 10px;}
 @media (max-width: 540px) and (min-width: 490px){html{font-size:85%;}}
 @media (max-width: 490px) and (min-width: 440px){html{font-size:80%;}}
 @media (max-width: 440px) and (min-width: 390px){html{font-size:75%;}}
-@media (max-width: 390px){html{font-size:70%;}}
+@media (max-width: 390px){html{font-size:700%;}}
