@@ -5,6 +5,7 @@
 .pa{position:absolute;}
 .pr{position:relative;}
 li{list-style:none;}
+html{font-size: 10px;}
 /*end  public公共类*/
 .contain{width:100%;max-width:640px;min-width:320px;margin:0 auto;/*padding:0 0.5rem;*/background: #ccc;height:3500px;}
 
@@ -21,5 +22,19 @@ li{list-style:none;}
 .center{margin-top:6.2rem;}
 /*轮播*/
 .slide{width:100%;}
+.slide .swiper-container img{width:100%;}
+
+/*分类*/
+.index-menu{margin:0 auto;}
+.index-menu dl{float:left;margin:0.5rem 2%;width:21%;text-align:center;}
+.index-menu dl dt img{height:100%;width:57%;}
+.index-menu dl dd{margin-top:0.5rem; }
+.index-menu dl dd a{font-size:1.6rem;color:#4C4D51;}
 
 
+@media (max-width: 640px) and (min-width: 590px){html{font-size:95%;}}
+@media (max-width: 590px) and (min-width: 540px){html{font-size:90%;}}
+@media (max-width: 540px) and (min-width: 490px){html{font-size:85%;}}
+@media (max-width: 490px) and (min-width: 440px){html{font-size:80%;}}
+@media (max-width: 440px) and (min-width: 390px){html{font-size:75%;}}
+@media (max-width: 390px){html{font-size:70%;}}
