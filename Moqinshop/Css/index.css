@@ -7,30 +7,53 @@
 li{list-style:none;}
 html{font-size: 16px;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
 body{font-size: 10px;}
+a:hover{text-decoration:none;color:#000;}
+a{color:#000;}
 /*end  public公共类*/
 .contain{width:100%;max-width:640px;min-width:320px;margin:0 auto;/*padding:0 0.5rem;*/background: #ccc;height:3500px;}
 
 
 .top{max-width:640px;position: fixed;min-width:320px;width:100%;/*padding:0 2.5rem;*/z-index:5;top:0px;}
-.top-search{width:100%;height:5rem;line-height: 5rem;/*padding:0 2.5rem;*/position: relative;top:0px;}
+.top-search{width:100%;height:3.5rem;line-height: 3.5rem;/*padding:0 2.5rem;*/position: relative;top:0px;}
 .top-search-panel,
 .top-search span.glyphicon-search,
 .top-search span.glyphicon-list{background:#1CBB7F;font-size:25px;border:none;top:0px;}
-.top-search span.glyphicon-search{font-size:25px;background:#1CBB7F;line-height:5rem;}
+.top-search span.glyphicon-search{font-size:25px;background:#1CBB7F;line-height:3.5rem;}
 
 .input-search{width:85%;position: absolute;	font-size:25px;height:80%;top:10%;}
 
-.center{margin-top:6.2rem;}
+.center{margin-top:4.1rem;}
 /*轮播*/
 .slide{width:100%;}
 .slide .swiper-container img{width:100%;}
 
 /*分类*/
-.index-menu{margin:0 auto;}
+.index-menu{margin:0 auto;overflow:hidden;background: #fff;}
 .index-menu dl{float:left;margin:0.5rem 2%;width:21%;text-align:center;}
 .index-menu dl dt img{height:100%;width:57%;}
 .index-menu dl dd{margin-top:0.5rem; }
 .index-menu dl dd a{font-size:1rem;color:#4C4D51;}
+
+/******大主推***/
+.index-bg-show{margin-top:.2rem;overflow: hidden;}
+.index-bg-show img{width:100%;}
+
+.index-bg-show-f,.index-bg-show-r{width:50%;}
+
+/*小主推*/
+.index-sm-show{margin-top:.2rem;overflow: hidden;width:100%;background: #fff;padding: 0.5rem 0;}
+.index-sm-show li{float: left;width:48%;margin:0 1%;}
+.index-sm-show li img{width:100%;}
+
+.index-pro{width:98%;margin-top: 1rem;}
+.index-pro-name{width:100%;height: 4rem;line-height: 4rem;text-align:center;font-size:1.3rem;}
+.index-pro-list{width:100%;}
+.index-pro-list dl{width:48%;float:left;margin:0 1%;}
+.index-pro-list dl dt img{width:100%;}
+.index-pro-list .index-pro-title{font-size:1.2rem;overflow: hidden;width:100%;height:3.5rem;text-overflow:ellipsis;display: -webkit-box;}
+.index-pro-list .index-pro-price{font-size:1.2rem;color:#1CBB7F;font-weight:bold;padding:0 0.2rem; }
+
+
 
 
 @media (max-width: 640px) and (min-width: 590px){html{font-size:95%;}}
