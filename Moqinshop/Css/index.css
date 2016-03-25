@@ -10,7 +10,7 @@ body{font-size: 10px;}
 a:hover{text-decoration:none;color:#000;}
 a{color:#000;}
 /*end  public公共类*/
-.contain{width:100%;max-width:640px;min-width:320px;margin:0 auto;/*padding:0 0.5rem;*/background: #ccc;height:3500px;}
+.contain{width:100%;max-width:640px;min-width:320px;margin:0 auto;/*padding:0 0.5rem;*/background: #ccc;}
 
 
 .top{max-width:640px;position: fixed;min-width:320px;width:100%;/*padding:0 2.5rem;*/z-index:5;top:0px;}
@@ -22,7 +22,7 @@ a{color:#000;}
 
 .input-search{width:85%;position: absolute;	font-size:25px;height:80%;top:10%;}
 
-.center{margin-top:4.1rem;}
+.center{margin-top:4.1rem;margin-bottom:4rem;overflow: hidden;}
 /*轮播*/
 .slide{width:100%;}
 .slide .swiper-container img{width:100%;}
@@ -46,7 +46,7 @@ a{color:#000;}
 .index-sm-show li img{width:100%;}
 
 /*商品*/
-.index-pro{width:98%;margin-top: 1rem;}
+.index-pro{width:98%;margin-top: 1rem;margin:0 auto;}
 .index-pro-name{width:100%;height: 4rem;line-height: 4rem;text-align:center;font-size:1.3rem;}
 .index-pro-list{width:100%;}
 .index-pro-list dl{width:48%;float:left;margin:0 1%;}
