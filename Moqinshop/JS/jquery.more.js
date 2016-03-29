@@ -59,7 +59,7 @@
         add_elements: function(data) {
             var root = target;
             var counter = 0;
-                    console.log(data)
+                    
             if (data) {
                 $(data).each(function() {
                     counter++;

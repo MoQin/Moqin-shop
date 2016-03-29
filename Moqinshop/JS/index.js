@@ -21,7 +21,8 @@ $(function(){
 	$(".pro-more").more({
         "url": "http://moqin89.com/js/php.php",
 		"template":".pro-more-list",
-		"trigger":".get_more"
+        'amount': '2',
+		"trigger":".pro-more-pic"
 	})
 	var lock=true;
 
@@ -41,30 +42,56 @@ $(function(){
 			    //     }
 
 		   		//  });
+				// $(window).scroll(function() {
+						
+				// 		var scrollTop = $(window).scrollTop() + 100;
+				// 		var documentHeight = $(document).height() - $(window).height();
+				// 		if (scrollTop >= documentHeight &&lock==true) {
+							
+
+				// 			lock=false;
+				// 			$.ajax({
+				// 				type:"post",
+				// 				url:"http://115yz.com/moqin/php.php",
+				// 				data:{},
+				// 				dataType:"json",
+				// 				success:function(data){
+				// 						alert(data)
+				// 				}
+				// 			})
+				// 		}
+				// });
+
+	// 单击搜索按钮
+	$(".input-search").focus(function(){
+		$(".contain").css({"display":"none"});
+		$(".search").css({"display":"block"});
+	})
+	// 单击关闭
+	$(".search-close").click(function(){
+		$(".contain").css({"display":"block"});
+		$(".search").css({"display":"none"});
+	})
 
 
-
-
-	// $(window).scroll(function() {
-			
-	// 		var scrollTop = $(window).scrollTop() + 100;
-	// 		var documentHeight = $(document).height() - $(window).height();
-	// 		if (scrollTop >= documentHeight &&lock==true) {
-				
-
-	// 			lock=false;
-	// 			$.ajax({
-	// 				type:"post",
-	// 				url:"http://115yz.com/moqin/php.php",
-	// 				data:{},
-	// 				dataType:"json",
-	// 				success:function(data){
-	// 						alert(data)
-	// 				}
-	// 			})
-	// 		}
-	// });
-
+	// 单击搜索
+	$(".search-text").click(function(){
+		var searchText=$(".search-input").val();
+		if(searchText!=""){
+			alert("单击搜索"+searchText)
+		}else{
+			alert("单击搜索,不过是空的	")
+		}
+	})
+	// 单击清除最近
+	$(".search-clear").click(function(){
+		alert("单击清楚最近")
+	})
+	//单击热搜
+	$(".ul-hot li").click(function(){
+		var searchText=$(this).text();
+		alert("单击了热搜："+searchText)
+	})
 
 })
 
