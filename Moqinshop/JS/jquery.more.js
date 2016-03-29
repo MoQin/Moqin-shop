@@ -16,7 +16,7 @@
         'last': 0
     };
     var settings = {
-        'amount': '8',
+        'amount': '2',
         'url': '',
         'template': '.single_item',
         'data':{},
@@ -47,7 +47,6 @@
             });
         },
         check_scroll: function() {
-        	alert("d")
             if ((target.scrollTop() + target.height() + parseInt(settings.offset)) >= target.attr('scrollHeight') && lock == false) {
                 target.more('get_data');
             }
@@ -60,6 +59,7 @@
         add_elements: function(data) {
             var root = target;
             var counter = 0;
+                    console.log(data)
             if (data) {
                 $(data).each(function() {
                     counter++;
@@ -97,10 +97,10 @@
                 postdata['amount'] = ile;
             $.post(settings.url, postdata, function(data) {
                 $(settings.trigger).css('display', 'block');
-                methods.add_elements(data);
+                methods.add_elements(data.d);
                 lock = false;
                 $("#waitbox").remove();
-            }, 'json');
+            }, 'jsonp');
         }
     };
     $.fn.more = function(method) {

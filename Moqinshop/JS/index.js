@@ -19,28 +19,28 @@ $(function(){
 	})
 	// 首页加载更多
 	$(".pro-more").more({
-		"url":"http://115yz.com/moqin/php.php",
+        "url": "http://moqin89.com/js/php.php",
 		"template":".pro-more-list",
-		"trigger":".pro-more-pic",
-		"scroll":"true"
+		"trigger":".get_more"
 	})
 	var lock=true;
 
 
-			    $.ajax({
-			        type: "post",
-			        dataType: "json",
-			        contentType: "text/json",
-			        url: "http://115yz.com/moqin/php.php",
-			        data: "{'pageSize':'00'}",
-			        success: function(data){
-			        	alert("d")
-			        },
-			        error:function(aa){
-			        	alert("错误");
-			        }
+			    // $.ajax({
+			    //     type: "post",
+			    //     dataType: "jsonp",
+			    //     contentType: "application/json",
+			    //     url: "http://moqin89.com/js/php.php",
+			    //     data: "",
+			    //     success: function(data){
+			    //     	alert(data.d[2].imgSrc)
+			    //     },
+			    //     error:function(XMLRequest,textStatue,errorThrown){
+			    //     	alert(XMLRequest.status);
+			    //     	alert(XMLRequest.readyState);
+			    //     }
 
-		   		 });
+		   		//  });
 
 
 
