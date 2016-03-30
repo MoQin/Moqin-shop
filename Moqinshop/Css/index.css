@@ -72,8 +72,8 @@ a{color:#000;}
 .search-clear{background: none;border:none;cursor:pointer;}
 .search-close{width:100%;margin:5rem auto;text-align: center;}
 
-
-
+#scrollUp { border-radius: 100%;background-color: #777;color: #fff; font-size: 40px;line-height: 1;text-align: center;text-decoration: none; bottom: 1.5em; right: 10px;overflow: hidden; width: 46px; height: 46px; opacity: 0.6; display: none;}
+.myup{z-index:9;right:1px;}
 
 
 

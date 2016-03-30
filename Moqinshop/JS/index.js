@@ -17,6 +17,18 @@ $(function(){
 	        autoplay: 2000
 	    })
 	})
+	//回到顶部
+	$.scrollUp({
+		"scrollText":"",
+	});
+	$(window).scroll(function(){
+		if($(this).scrollTop()>300){
+			$("#scrollUp").fadeIn();
+			$("#scrollUp").html('<i class="glyphicon glyphicon-arrow-up myup"></i>');
+		}else{
+			$("#scrollUp").fadeOut();
+		}
+	})
 	// 首页加载更多
 	$(".pro-more").more({
         "url": "http://moqin89.com/js/php.php",
