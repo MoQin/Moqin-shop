@@ -8,6 +8,7 @@ $(function(){
 			$(this).html($(this).html()+"....")
 		}
 	})
+	
 	// 首页轮播
 	$(function() {
 	    var mySwiper = new Swiper(".swiper-container", {
